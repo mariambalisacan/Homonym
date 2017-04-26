@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Homonym</title>
+
+    <!-- Logo -->
+    <link rel="icon" href="img/favicon/favicon.ico">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Navigation -->
+    <!-- Hamburger Menu -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
+        <i class="fa fa-bars"></i>
+    </a>
+    
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li>
+                <a href="index.html" onclick = $("#menu-close").click(); >Home</a>
+            </li>
+
+            <li>
+                <a href="about.html" onclick = $("#menu-close").click(); >About Us</a>
+            </li>
+
+            <li>
+                <a href="science.html" onclick = $("#menu-close").click(); >Music Science</a>
+            </li>
+            
+            <li>
+                <a href="live.html" onclick = $("#menu-close").click(); >Homonym Live</a>
+            </li>
+
+            <li>
+                <a href="music.html" onclick = $("#menu-close").click(); >Homonym Music</a>
+            </li>
+
+            <li>
+                <a href="work.html" onclick = $("#menu-close").click(); >Our Work</a>
+            </li>
+            
+            <li>
+                <a href="about.html#contact" onclick = $("#menu-close").click(); >Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- here -->
+
+    <div class="live_bg contain">
+
+        <img src="img/Homonym White.png" class="top_img" />
+        
+            <div class="flex-caption">
+                <div class="caption_title_line">
+                    <h1 class="uppercase">Homonym Live</h1>
+                    <h3>The first ever music marketing agency and music technology platform in the country that harnesses the power, ubiquity and universality of music and entertainment to deliver sound strategies and translate them into authentic brand experiences.</h3>
+                     <a href="#"><button type="button" class="btn btn-see">See Our Approach > </button></a>
+                </div>
+            </div>
+    </div>
+
+    <!-- to here -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/hamburgerMenu.js"></script>
+
+    <!-- Slider -->
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+
+    <script type="text/javascript" charset="utf-8">
+    var $ = jQuery.noConflict();
+    $(window).load(function() {
+    $('.flexslider').flexslider({
+          animation: "fade"
+    });
+    
+    $(function() {
+        $('.show_menu').click(function(){
+                $('.menu').fadeIn();
+                $('.show_menu').fadeOut();
+                $('.hide_menu').fadeIn();
+        });
+        $('.hide_menu').click(function(){
+                $('.menu').fadeOut();
+                $('.show_menu').fadeIn();
+                $('.hide_menu').fadeOut();
+        });
+    });
+  });
+</script>
+</body>
+
+</html>
